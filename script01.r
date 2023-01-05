@@ -9,3 +9,4 @@ suppressPackageStartupMessages({
   library(leaflet)
   library(mapedit)
 })
+

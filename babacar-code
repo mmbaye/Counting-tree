@@ -1,0 +1,60 @@
+
+
+# par ailleurs, nous avons trouvé que l'humidité
+# du sol dans region du ferlo augmenté de 50% environ
+# pendant la periode hivernale
+
+
+library(plotly)
+
+df<-df.all
+df$types<-month(df$UTC, label = T)
+df$years<-year(df$UTC)
+
+
+m<-highlight_key(df[,c(1,4,6)])
+m1<-ggplot(m,aes(theta2,VV,color=mois)) +geom_point() 
+    
+
+
+m1
+
+m3<-highlight(ggplotly(m1),'plotly_selected')
+crosstalk::bscols(m3,DT::datatable(m))
+
+
+p2<-ggplot(df,aes(theta2,VV, color=mois))+ geom_point(size=3)+
+        theme(title=element_text(face = 'bold', size = 12),
+              axis.text.y = element_text(face = 'bold',size=14),
+              axis.text.x = element_text(face = 'bold', size = 14),
+              axis.title.x = element_text(face = 'bold',size = 14),
+              axis.title.y = element_text(face = 'bold',size = 14),
+              #legend.position = c(0,0),
+              legend.box = 'horizontal',
+              legend.title=element_text(face="bold", size=14),
+              legend.text = element_text(face="bold", size = 18),
+              panel.border = element_blank(),
+              panel.background = element_rect(size=2,linetype = 'solid'))+
+        labs(title = '',x='', y='')
+p2
+
+p2 +scale_color_manual(name='Reference Carpet',
+                   values=rainbow(12))
+# labels=c('Accuracy','Kappa')
+
+
+
+
+library(arm)
+nsim<-1000
+bsim<-sim(mod,n.sim=nsim)
+
+
+plot(x,y, pch=16,las=1,cex.lab=1.2, 
+     ylab="", 
+     xlab="")
+
+for (i in 1:nsim) {
+        abline(coef(bsim)[i,1],coef(bsim)[i,1], col=rgb(0,0,0,0.05))
+        
+}
