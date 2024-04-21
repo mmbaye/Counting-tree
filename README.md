@@ -49,4 +49,4 @@ Forests play a critical role in the global carbon cycle, as they absorb and stor
   - Choose a suitable machine learning or deep learning framework (e.g., SAM  and YOLO)
 
     ![](https://github.com/mmbaye/Counting-tree/blob/main/training%20/val_batch0_pred.jpg)
-![image](https://github.com/mmbaye/Counting-tree/assets/10470281/9ab323e6-ba0a-4cce-86a3-307a069e9e05)
+
