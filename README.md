@@ -9,3 +9,42 @@ Forests play a critical role in the global carbon cycle, as they absorb and stor
 
 ![](https://github.com/mmbaye/Counting-tree/blob/main/images/methodology.jpg)
 
+ 1. Data Collection
+  a. Satellite Imagery Acquisition
+-  Objective: Obtain high-resolution satellite images that cover the targeted forest areas.
+-  Action Steps :
+  - Select open-source satellite data repositories.
+  - Choose images with high spatial resolution (preferably under 1 meter) for better tree canopy differentiation.
+
+  b. Drone Imagery Acquisition
+-  Objective : Capture detailed aerial photographs and videos of the forest.
+-  Action Steps :
+  - Deploy drones equipped with high-resolution  RGB cameras 
+  - Plan flight paths to ensure complete coverage and optimal lighting conditions for image quality.
+
+ 2. Image Preprocessing
+  a. Image Correction and Enhancement
+-  Objective : Improve the quality of raw images for better analysis.
+-  Action Steps :
+  - Apply radiometric and geometric corrections.
+  - Enhance images using techniques such as histogram equalization or contrast adjustment.
+
+  b. Image Registration
+-  Objective : Align drone and satellite images to a common coordinate system.
+-  Action Steps :
+  - Use ground control points and GPS data for accurate image registration.
+  - Employ software tools for automated alignment and calibration.
+
+ 3. Tree Detection Algorithm Development
+  a. Feature Selection
+-  Objective : Identify and select features significant for tree detection.
+-  Action Steps :
+  - Analyze textural, spectral, and spatial information relevant to tree species and canopy structure.
+  - Use machine learning algorithms to identify the most discriminative features for tree detection.
+
+  b. Model Training
+-  Objective : Develop a robust computer vision model to detect individual trees.
+-  Action Steps :
+  - Collect training data from annotated images where individual trees are marked.
+  - Choose a suitable machine learning or deep learning framework (e.g., SAM  and YOLO).
+![image](https://github.com/mmbaye/Counting-tree/assets/10470281/9ab323e6-ba0a-4cce-86a3-307a069e9e05)
