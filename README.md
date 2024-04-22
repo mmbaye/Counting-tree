@@ -50,3 +50,33 @@ Forests play a critical role in the global carbon cycle, as they absorb and stor
 
     ![](https://github.com/mmbaye/Counting-tree/blob/main/training%20/val_batch0_pred.jpg)
 
+
+- Train the model using the selected features with cross-validation to ensure model accuracy.
+
+ 4. Tree Detection Implementation
+  a. Running Detection Algorithms
+-  Objective : Apply the trained model to new images for tree detection.
+-  Action Steps :
+  - Process the preprocessed images using the trained model.
+  - Use sliding window techniques or region proposal algorithms to locate trees in the images.
+
+  b. Validation and Accuracy Assessment
+-  Objective : Evaluate the effectiveness and accuracy of the tree detection method.
+-  Action Steps :
+  - Compare detected tree locations with ground-truth data from field surveys.
+  - Calculate metrics such as precision, recall, and F1-score to assess performance.
+
+ 5. Integration and Scaling
+  a. Integration with GIS Systems
+-  Objective : Integrate detected tree data into Geographic Information Systems (GIS) for further analysis.
+-  Action Steps :
+  - Convert detected tree coordinates into GIS-compatible formats.
+  - Link tree data with other ecological or geographical datasets for comprehensive analysis.
+
+  b. Scaling and Automation
+-  Objective : Automate the process and scale up to cover larger areas.
+-  Action Steps :
+  - Develop scripts or applications that automate the workflow from image acquisition to tree detection.
+  - Expand the model application to new areas using transfer learning techniques where applicable.
+![image](https://github.com/mmbaye/Counting-tree/assets/10470281/64e31285-164e-4f18-8222-54a861c88b03)
+
